@@ -1,0 +1,114 @@
+# Project definitions (do not edit)
+Task: NOR
+scorer: lazaro
+date: Oct31
+multianimalproject: false
+identity:
+
+
+# Project path (change when moving around)
+project_path: C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31
+
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20221215_11_24_50_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230324_10_31_04_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230602_09_25_31_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230810_11_14_06_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240606_14_26_31_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240606_14_40_54_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240808_12_03_57_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240830_10_56_56_Pro.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20221215_11_24_50_Procropped.mp4:
+    crop: 0, 570, 0, 574
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230324_10_31_04_Procropped.mp4:
+    crop: 0, 592, 0, 588
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230602_09_25_31_Procropped.mp4:
+    crop: 0, 568, 0, 578
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20230810_11_14_06_Procropped.mp4:
+    crop: 0, 568, 0, 566
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240606_14_26_31_Procropped.mp4:
+    crop: 0, 614, 0, 608
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240606_14_40_54_Procropped.mp4:
+    crop: 0, 608, 0, 608
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240808_12_03_57_Procropped.mp4:
+    crop: 0, 612, 0, 624
+  C:\Users\lazar\Desktop\NOR-lazaro-2024-10-31\videos\WIN_20240830_10_56_56_Procropped.mp4:
+    crop: 0, 626, 0, 636
+bodyparts:
+- nose
+- right_ear
+- left_ear
+- tail_base
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 50
+
+
+# Plotting configuration
+skeleton:
+- - bodypart1
+  - bodypart2
+- - objectA
+  - bodypart3
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
